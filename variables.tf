@@ -25,3 +25,10 @@ variable "uptime_monitoring_path" {
   description = "The path to monitor on the host"
   default     = "/"
 }
+
+variable "alert_notification_channels" {
+  type        = list(string)
+  description = "A list of notification channels to notify when the uptime check fails."
+  default     = []
+
+}
